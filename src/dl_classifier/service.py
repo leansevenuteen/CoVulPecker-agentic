@@ -78,10 +78,10 @@ class DLClassifierService:
                  device: Optional[str] = None,
                  num_features: int = 200,
                  tokens_dim: int = 768,
-                 hidden_dim: int = 256,
+                 hidden_dim: int = 128,
                  num_conv_layers: int = 3,
-                 fusion_mode: str = "cross_atten",
-                 head: int = 8,
+                 fusion_mode: str = "gated",
+                 head: int = 4,
                  dropout: float = 0.3):
         """
         Initialize the classifier service.

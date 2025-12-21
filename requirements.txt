@@ -28,5 +28,7 @@ numpy>=1.24.0
 scikit-learn>=1.3.0
 
 # Optional: For code embeddings (when user provides implementation)
-# transformers>=4.30.0  # For CodeT5
-# node2vec>=0.4.0       # For graph embeddings
+transformers>=4.30.0  # For CodeT5
+node2vec>=0.4.0       # For graph embeddings
+networkx>=3.0         # Required by node2vec
+gensim>=4.3.0         # Required by node2vec for Word2Vec
