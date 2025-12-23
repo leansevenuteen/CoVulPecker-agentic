@@ -1,0 +1,5502 @@
+[
+  {
+    "sample_id": 0,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.5940387845039368,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "clean",
+      "confidence": 0.5229183435440063,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": false,
+      "critic_decision": null
+    },
+    "pairwise_category": "UNKNOWN",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 1,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7629019021987915,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7629019021987915,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 2,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.5396984219551086,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.5396984219551086,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 3,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7307446599006653,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7307446599006653,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 4,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7729180455207825,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7295895218849182,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 5,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.8198467493057251,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7367736101150513,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 6,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7964259386062622,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.779147207736969,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 7,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.5559529662132263,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.8015918135643005,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 8,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6997573375701904,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6997573375701904,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 9,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7565360069274902,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6711392402648926,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 10,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6818444132804871,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.709861695766449,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 11,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7131505608558655,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.731534481048584,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 12,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6464489102363586,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7227288484573364,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 13,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.5968253016471863,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7925485372543335,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 14,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7077767252922058,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7077767252922058,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 15,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.8128108978271484,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7958781719207764,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 16,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6781267523765564,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.8021583557128906,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 17,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.5046035051345825,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.5046035051345825,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 18,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7699440717697144,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.8741544485092163,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 19,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "clean",
+      "confidence": 0.5835304856300354,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": false,
+      "critic_decision": null
+    },
+    "post_patch_prediction": {
+      "predicted_label": "clean",
+      "confidence": 0.5835304856300354,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": false,
+      "critic_decision": null
+    },
+    "pairwise_category": "UNKNOWN",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 20,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6956014037132263,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7469891905784607,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 21,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7809332013130188,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7809332013130188,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 22,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7847854495048523,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.721821129322052,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 23,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "clean",
+      "confidence": 0.5652716755867004,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": false,
+      "critic_decision": null
+    },
+    "post_patch_prediction": {
+      "predicted_label": "clean",
+      "confidence": 0.5652716755867004,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": false,
+      "critic_decision": null
+    },
+    "pairwise_category": "UNKNOWN",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 24,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.8098874092102051,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.777238667011261,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 25,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.743009090423584,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.743009090423584,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 26,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6548950672149658,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6548950672149658,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 27,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7919901609420776,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7919901609420776,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 28,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7826266288757324,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7826266288757324,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 29,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7808996438980103,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.8931021094322205,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 30,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.614183783531189,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6850151419639587,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 31,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "clean",
+      "confidence": 0.5303041934967041,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": false,
+      "critic_decision": null
+    },
+    "post_patch_prediction": {
+      "predicted_label": "clean",
+      "confidence": 0.5303041934967041,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": false,
+      "critic_decision": null
+    },
+    "pairwise_category": "UNKNOWN",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 32,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7586341500282288,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7152557373046875,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 33,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6745569705963135,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.5975508093833923,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 34,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7344977855682373,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7344977855682373,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 35,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7700713872909546,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7747163772583008,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 36,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "clean",
+      "confidence": 0.5338389873504639,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": false,
+      "critic_decision": null
+    },
+    "post_patch_prediction": {
+      "predicted_label": "clean",
+      "confidence": 0.5338389873504639,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": false,
+      "critic_decision": null
+    },
+    "pairwise_category": "UNKNOWN",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 37,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6943648457527161,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.726486086845398,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 38,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7022070288658142,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6992096304893494,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 39,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.5176003575325012,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7351311445236206,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 40,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7873830795288086,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.882391631603241,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 41,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7013484239578247,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7013484239578247,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 42,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7511171102523804,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7299709320068359,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 43,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7416725158691406,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7517193555831909,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 44,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7529263496398926,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.707665205001831,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 45,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "clean",
+      "confidence": 0.6134316921234131,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": false,
+      "critic_decision": null
+    },
+    "post_patch_prediction": {
+      "predicted_label": "clean",
+      "confidence": 0.6134316921234131,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": false,
+      "critic_decision": null
+    },
+    "pairwise_category": "UNKNOWN",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 46,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6844232082366943,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.5524182915687561,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 47,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "clean",
+      "confidence": 0.5746041536331177,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": false,
+      "critic_decision": null
+    },
+    "post_patch_prediction": {
+      "predicted_label": "clean",
+      "confidence": 0.5746041536331177,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": false,
+      "critic_decision": null
+    },
+    "pairwise_category": "UNKNOWN",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 48,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6895244717597961,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7108133435249329,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 49,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "clean",
+      "confidence": 0.5073789954185486,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": false,
+      "critic_decision": null
+    },
+    "post_patch_prediction": {
+      "predicted_label": "clean",
+      "confidence": 0.5073789954185486,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": false,
+      "critic_decision": null
+    },
+    "pairwise_category": "UNKNOWN",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 50,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6844285726547241,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.8003318309783936,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 51,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7118399143218994,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7086506485939026,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 52,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7027504444122314,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.8106255531311035,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 53,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6658464670181274,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.812502384185791,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 54,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6782410144805908,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6928226351737976,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 55,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7314134836196899,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7314134836196899,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 56,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6575955152511597,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.8597873449325562,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 57,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7794036269187927,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.8102624416351318,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 58,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7837481498718262,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.8019185662269592,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 59,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7873657941818237,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6763189435005188,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 60,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "clean",
+      "confidence": 0.5916976928710938,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": false,
+      "critic_decision": null
+    },
+    "post_patch_prediction": {
+      "predicted_label": "clean",
+      "confidence": 0.5637471079826355,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": false,
+      "critic_decision": null
+    },
+    "pairwise_category": "UNKNOWN",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 61,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.8494400978088379,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7323148250579834,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 62,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6766546964645386,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6668931245803833,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 63,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6328814029693604,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6328814029693604,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 64,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "clean",
+      "confidence": 0.51960289478302,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": false,
+      "critic_decision": null
+    },
+    "post_patch_prediction": {
+      "predicted_label": "clean",
+      "confidence": 0.60446697473526,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": false,
+      "critic_decision": null
+    },
+    "pairwise_category": "UNKNOWN",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 65,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.683373749256134,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7885557413101196,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 66,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.775412380695343,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.793103039264679,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 67,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6760656833648682,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.8056201934814453,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 68,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7841085195541382,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7417941093444824,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 69,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7421296834945679,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7844895720481873,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 70,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7306734919548035,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7306734919548035,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 71,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6761870980262756,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.8438377380371094,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 72,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.5782808661460876,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.727303147315979,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 73,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6178708672523499,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6178708672523499,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 74,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.8371400833129883,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7552995681762695,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 75,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6514603495597839,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6514603495597839,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 76,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7324501276016235,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7324501276016235,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 77,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "clean",
+      "confidence": 0.6564093232154846,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": false,
+      "critic_decision": null
+    },
+    "post_patch_prediction": {
+      "predicted_label": "clean",
+      "confidence": 0.6066343188285828,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": false,
+      "critic_decision": null
+    },
+    "pairwise_category": "UNKNOWN",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 78,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "clean",
+      "confidence": 0.6188094019889832,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": false,
+      "critic_decision": null
+    },
+    "post_patch_prediction": {
+      "predicted_label": "clean",
+      "confidence": 0.6188094019889832,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": false,
+      "critic_decision": null
+    },
+    "pairwise_category": "UNKNOWN",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 79,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7453587055206299,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7453587055206299,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 80,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.724003791809082,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.724003791809082,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 81,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "clean",
+      "confidence": 0.5574522614479065,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": false,
+      "critic_decision": null
+    },
+    "post_patch_prediction": {
+      "predicted_label": "clean",
+      "confidence": 0.5574522614479065,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": false,
+      "critic_decision": null
+    },
+    "pairwise_category": "UNKNOWN",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 82,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.8867877721786499,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6422243118286133,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 83,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7011479139328003,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.8316410779953003,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 84,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6527014374732971,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6866199970245361,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 85,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7956576943397522,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7956576943397522,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 86,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6769012212753296,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7564443349838257,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 87,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6723107099533081,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7262844443321228,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 88,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7140561938285828,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7013266086578369,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 89,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7323010563850403,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.87253737449646,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 90,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7316291928291321,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7316291928291321,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 91,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7257651090621948,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7257651090621948,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 92,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "clean",
+      "confidence": 0.5940531492233276,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": false,
+      "critic_decision": null
+    },
+    "post_patch_prediction": {
+      "predicted_label": "clean",
+      "confidence": 0.5940531492233276,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": false,
+      "critic_decision": null
+    },
+    "pairwise_category": "UNKNOWN",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 93,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "clean",
+      "confidence": 0.5520187020301819,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": false,
+      "critic_decision": null
+    },
+    "post_patch_prediction": {
+      "predicted_label": "clean",
+      "confidence": 0.5520187020301819,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": false,
+      "critic_decision": null
+    },
+    "pairwise_category": "UNKNOWN",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 94,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "clean",
+      "confidence": 0.5849205851554871,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": false,
+      "critic_decision": null
+    },
+    "post_patch_prediction": {
+      "predicted_label": "clean",
+      "confidence": 0.5849205851554871,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": false,
+      "critic_decision": null
+    },
+    "pairwise_category": "UNKNOWN",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 95,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7767481207847595,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7512417435646057,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 96,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.8258486986160278,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.8258486986160278,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 97,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6060970425605774,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6060970425605774,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 98,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.764581561088562,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7751829624176025,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 99,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7026620507240295,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.8163233399391174,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 100,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7711195945739746,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7711195945739746,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 101,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6776357293128967,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6776357293128967,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 102,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7486345767974854,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.806503176689148,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 103,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6980180740356445,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6728051900863647,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 104,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6221169829368591,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6221169829368591,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 105,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7304486036300659,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7304486036300659,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 106,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.787067711353302,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7022033333778381,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 107,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7370567321777344,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6951014399528503,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 108,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "clean",
+      "confidence": 0.5148864984512329,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": false,
+      "critic_decision": null
+    },
+    "post_patch_prediction": {
+      "predicted_label": "clean",
+      "confidence": 0.5148864984512329,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": false,
+      "critic_decision": null
+    },
+    "pairwise_category": "UNKNOWN",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 109,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7938477396965027,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7791615128517151,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 110,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6829323172569275,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6829323172569275,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 111,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.5999144315719604,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.5453184843063354,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 112,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7638343572616577,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7759571075439453,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 113,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.5989806056022644,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.731914222240448,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 114,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6412312984466553,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7736654877662659,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 115,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.751055896282196,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.751055896282196,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 116,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6997425556182861,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6997425556182861,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 117,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.8079867362976074,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.8079867362976074,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 118,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6814528107643127,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6814528107643127,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 119,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7333056926727295,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6867483854293823,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 120,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7380157709121704,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7637041211128235,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 121,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7980978488922119,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6427157521247864,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 122,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6490421891212463,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7592330574989319,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 123,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.5361394882202148,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.5361394882202148,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 124,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7633336782455444,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7633336782455444,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 125,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7881283760070801,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7273261547088623,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 126,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.5511175394058228,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7692099809646606,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 127,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "clean",
+      "confidence": 0.5480250120162964,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": false,
+      "critic_decision": null
+    },
+    "post_patch_prediction": {
+      "predicted_label": "clean",
+      "confidence": 0.5480250120162964,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": false,
+      "critic_decision": null
+    },
+    "pairwise_category": "UNKNOWN",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 128,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7713444232940674,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7713444232940674,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 129,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7041323184967041,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7041323184967041,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 130,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7908429503440857,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7658926844596863,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 131,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7330924272537231,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.8088760375976562,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 132,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7625641226768494,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7625641226768494,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 133,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.620966911315918,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "clean",
+      "confidence": 0.6064113974571228,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": false,
+      "critic_decision": null
+    },
+    "pairwise_category": "UNKNOWN",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 134,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6650786399841309,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.716042160987854,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 135,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7417441010475159,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7417441010475159,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 136,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "clean",
+      "confidence": 0.6159796714782715,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": false,
+      "critic_decision": null
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6059806942939758,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "UNKNOWN",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 137,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.76337730884552,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.76337730884552,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 138,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7548390626907349,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7311756014823914,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 139,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7924342751502991,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7924342751502991,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 140,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.731879472732544,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7767767906188965,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 141,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7982367873191833,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.5461758375167847,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 142,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7963520884513855,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7860361933708191,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 143,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7521312236785889,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7521312236785889,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 144,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7898866534233093,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.526468813419342,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 145,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7190876007080078,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.740390419960022,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 146,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.8048139810562134,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.5561941266059875,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 147,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.688605785369873,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.683448076248169,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 148,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.60060715675354,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.60060715675354,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 149,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.734370231628418,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6871489882469177,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 150,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.5763055086135864,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.5763055086135864,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 151,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.546119749546051,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.546119749546051,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 152,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7074261903762817,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7922236919403076,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 153,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7901585102081299,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7901585102081299,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 154,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.8195222616195679,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7890473008155823,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 155,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7586653828620911,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7832168340682983,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 156,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "clean",
+      "confidence": 0.5473955273628235,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": false,
+      "critic_decision": null
+    },
+    "post_patch_prediction": {
+      "predicted_label": "clean",
+      "confidence": 0.5473955273628235,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": false,
+      "critic_decision": null
+    },
+    "pairwise_category": "UNKNOWN",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 157,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7514164447784424,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6995857954025269,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 158,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7902612686157227,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7197157144546509,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 159,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.5997013449668884,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.5997013449668884,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 160,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7320149540901184,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7320149540901184,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 161,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.776180624961853,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6959238052368164,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 162,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7180643081665039,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7180643081665039,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 163,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6029990911483765,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6029990911483765,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 164,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7782400250434875,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7829410433769226,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 165,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.5968605875968933,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "clean",
+      "confidence": 0.6148847937583923,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": false,
+      "critic_decision": null
+    },
+    "pairwise_category": "UNKNOWN",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 166,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "clean",
+      "confidence": 0.5473850965499878,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": false,
+      "critic_decision": null
+    },
+    "post_patch_prediction": {
+      "predicted_label": "clean",
+      "confidence": 0.5473850965499878,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": false,
+      "critic_decision": null
+    },
+    "pairwise_category": "UNKNOWN",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 167,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7737835645675659,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.518166720867157,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 168,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.750744640827179,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7666797637939453,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 169,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.529512345790863,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.529512345790863,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 170,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6816155910491943,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.768879234790802,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 171,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.5489282608032227,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.5489282608032227,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 172,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7734556198120117,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.8073933124542236,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 173,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7251664400100708,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7868655920028687,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 174,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7162677049636841,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.8109625577926636,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 175,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.694202721118927,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6152783036231995,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 176,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "clean",
+      "confidence": 0.5663076639175415,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": false,
+      "critic_decision": null
+    },
+    "post_patch_prediction": {
+      "predicted_label": "clean",
+      "confidence": 0.5663076639175415,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": false,
+      "critic_decision": null
+    },
+    "pairwise_category": "UNKNOWN",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 177,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6487009525299072,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7620735168457031,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 178,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "clean",
+      "confidence": 0.5545061826705933,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": false,
+      "critic_decision": null
+    },
+    "post_patch_prediction": {
+      "predicted_label": "clean",
+      "confidence": 0.5545061826705933,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": false,
+      "critic_decision": null
+    },
+    "pairwise_category": "UNKNOWN",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 179,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "clean",
+      "confidence": 0.5832875370979309,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": false,
+      "critic_decision": null
+    },
+    "post_patch_prediction": {
+      "predicted_label": "clean",
+      "confidence": 0.5832875370979309,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": false,
+      "critic_decision": null
+    },
+    "pairwise_category": "UNKNOWN",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 180,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6247784495353699,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.5941317081451416,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 181,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.8072323799133301,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.8072323799133301,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 182,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7049906849861145,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7260100841522217,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 183,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.84705650806427,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7609719038009644,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 184,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.5002952218055725,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.5002952218055725,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 185,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.813056230545044,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.813056230545044,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 186,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7840413451194763,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6787182688713074,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 187,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.706291675567627,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7624669075012207,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 188,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.8309174180030823,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.8309174180030823,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 189,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6909970045089722,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6909970045089722,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 190,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7498540282249451,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7498540282249451,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 191,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6153851747512817,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6153851747512817,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 192,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6688898801803589,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6935142874717712,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 193,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7774041891098022,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6735009551048279,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 194,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.839095413684845,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.839095413684845,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 195,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7580506801605225,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.763412356376648,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 196,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.799871563911438,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.799871563911438,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 197,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7290072441101074,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7277279496192932,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 198,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7998664975166321,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.5134656429290771,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 199,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7369669675827026,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.772009551525116,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 200,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.618245542049408,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6731337308883667,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 201,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "clean",
+      "confidence": 0.5314055681228638,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": false,
+      "critic_decision": null
+    },
+    "post_patch_prediction": {
+      "predicted_label": "clean",
+      "confidence": 0.5314055681228638,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": false,
+      "critic_decision": null
+    },
+    "pairwise_category": "UNKNOWN",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 202,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7855930328369141,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7855930328369141,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 203,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6331304311752319,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.5242761969566345,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 204,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7762224674224854,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7762224674224854,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 205,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7103757262229919,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7181696891784668,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 206,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7858160734176636,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.8179792761802673,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 207,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7383307814598083,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7583204507827759,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 208,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.730003833770752,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.8367925882339478,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 209,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6706001162528992,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7493119239807129,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 210,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.718900203704834,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.721643328666687,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 211,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7354588508605957,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.8355721235275269,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 212,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.8186088800430298,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.8136729598045349,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 213,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.8168518543243408,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.8168518543243408,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 214,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7102949619293213,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7102949619293213,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 215,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7649093866348267,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7649093866348267,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 216,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7180503606796265,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7180503606796265,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 217,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7791780829429626,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7791780829429626,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 218,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7376827001571655,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7873111963272095,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 219,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.8585479855537415,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7537163496017456,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 220,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6180535554885864,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7206649780273438,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 221,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7694922685623169,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7717711329460144,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 222,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7873421907424927,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7486617565155029,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 223,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6765797734260559,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7180068492889404,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 224,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.636631429195404,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.636631429195404,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 225,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7104723453521729,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7023329734802246,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 226,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7080281972885132,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6895194053649902,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 227,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6628438234329224,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6628438234329224,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 228,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.8527069091796875,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.8527069091796875,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 229,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "clean",
+      "confidence": 0.5617185831069946,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": false,
+      "critic_decision": null
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.5860893726348877,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "UNKNOWN",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 230,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7388663291931152,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7084252834320068,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 231,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7272444367408752,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7981942296028137,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 232,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7712909579277039,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7230856418609619,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 233,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.675701379776001,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.675701379776001,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 234,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.8003045320510864,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7382849454879761,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 235,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.5167235732078552,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.5167235732078552,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 236,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.8426835536956787,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7293132543563843,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 237,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7264294624328613,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7264294624328613,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 238,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.8282752633094788,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.8482820987701416,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 239,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7726210355758667,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7726210355758667,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 240,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7249245643615723,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6467549204826355,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 241,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.552996814250946,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.8256672024726868,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 242,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6977366209030151,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6977366209030151,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 243,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7317162752151489,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6705064177513123,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 244,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7535738945007324,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7535738945007324,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 245,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7420961856842041,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7048017382621765,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 246,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7849803566932678,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7849803566932678,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 247,
+    "cwe_id": "Unknown",
+    "true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.736709713935852,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.736709713935852,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 248,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7543986439704895,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7185038328170776,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 249,
+    "cwe_id": "Unknown",
+    "true_label": 1,
+    "pre_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.6451214551925659,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "vulnerable",
+      "confidence": 0.7178553342819214,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": true,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-V",
+    "iterations": 1,
+    "status": "success"
+  }
+]
