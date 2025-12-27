@@ -7,35 +7,39 @@
 │  🎯 STAGE 1: CLASSIFIER AGENT                                      │
 │  ─────────────────────────────────────────────────────────────────  │
 │  • Phân loại code có khả năng chứa lỗ hổng hay không                │     -----> Ở stage này, agent sẽ gọi tool multimodal 
-│  • Xác định các pattern nguy hiểm (SQL Injection, XSS, RCE...)     │             deep learning của tôi, nhưng hiện tại tôi
+│  • Xác định các pattern nguy hiểm (SQL Injection, XSS, RCE...)     │             deep learning, nhưng hiện tại
 │  • Output: label, confidence, detected_patterns                    │             chưa tích hợp mô hình xong. nên là ở
 └─────────────────────────────────────────────────────────────────────┘            stage này thì auto label ra vuln nhé.
                                    │
+                                   | Call tool detection
+                                   | 
                                    ▼
 ┌─────────────────────────────────────────────────────────────────────┐
-│  🎯 STAGE 2: DETECTION AGENT                                       │
+│  🎯 STAGE 2: DETECTION AGENT                                        │
 │  ─────────────────────────────────────────────────────────────────  │
-│  • Phân tích chi tiết các lỗ hổng trong code                       │
-│  • Xác định vị trí, loại, mức độ nghiêm trọng                      │
-│  • Nhận feedback từ Critic để cải thiện (nếu có)                   │
+│  • Phân tích chi tiết các lỗ hổng trong code                        │
+│  • Xác định vị trí, loại, mức độ nghiêm trọng                       │
+│  • Nhận feedback từ Critic để cải thiện (nếu có)                    │
+└─────────────────────────────────────────────────────────────────────┘
+                                   │ 1 - Vuln
+                                   | 0 - Clean
+                                   ▼
+┌─────────────────────────────────────────────────────────────────────┐
+│  🎯 STAGE 3: REASON AGENT                                           │
+│  ─────────────────────────────────────────────────────────────────  │
+│  • Tạo lý luận chi tiết về lỗ hổng                                  │
+│  • Giải thích tại sao code vulnerable                               │
+│  • Đề xuất cách khai thác và khắc phục                              │
 └─────────────────────────────────────────────────────────────────────┘
                                    │
-                                   ▼
+                                   |  Vuln Report 
+                                   ▼  
 ┌─────────────────────────────────────────────────────────────────────┐
-│  🎯 STAGE 3: REASON AGENT                                          │
+│  🎯 STAGE 4: CRITIC AGENT                                           │
 │  ─────────────────────────────────────────────────────────────────  │
-│  • Tạo lý luận chi tiết về lỗ hổng                                 │
-│  • Giải thích tại sao code vulnerable                              │
-│  • Đề xuất cách khai thác và khắc phục                             │
-└─────────────────────────────────────────────────────────────────────┘
-                                   │
-                                   ▼
-┌─────────────────────────────────────────────────────────────────────┐
-│  🎯 STAGE 4: CRITIC AGENT                                          │
-│  ─────────────────────────────────────────────────────────────────  │
-│  • Đánh giá chất lượng phân tích                                   │
-│  • Nếu APPROVED → tiếp tục                                         │
-│  • Nếu REJECTED → gửi feedback quay lại Detection (max 3 lần)      │
+│  • Đánh giá chất lượng phân tích                                    │
+│  • Nếu APPROVED → tiếp tục                                          │
+│  • Nếu REJECTED → gửi feedback quay lại Detection (max 3 lần)       │
 └─────────────────────────────────────────────────────────────────────┘
                     │                              │
            ┌────────┴────────┐                     │
@@ -53,10 +57,10 @@
                                    │
                                    ▼
 ┌─────────────────────────────────────────────────────────────────────┐
-│  🎯 STAGE 5: FINAL VERIFICATION                                    │
+│  🎯 STAGE 5: FINAL VERIFICATION                                     │
 │  ─────────────────────────────────────────────────────────────────  │
-│  • Xác nhận lỗ hổng với PoC đã tạo                                 │
-│  • Đánh dấu vulnerability_confirmed = True/False                   │
+│  • Xác nhận lỗ hổng với PoC đã tạo                                  │
+│  • Đánh dấu vulnerability_confirmed = True/False                    │
 └─────────────────────────────────────────────────────────────────────┘
                                    │
                                    ▼
@@ -65,6 +69,5 @@
 │  • Classification result                                            │
 │  • Detailed reasoning                                               │
 │  • PoC exploit code                                                 │
-│  • Test cases                                                       │
 │  • Verification status                                              │
 └─────────────────────────────────────────────────────────────────────┘

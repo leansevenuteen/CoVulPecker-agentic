@@ -114,14 +114,14 @@ def run_detection_on_dataset(
             pre_label = pre_prediction['predicted_label']
             post_label = post_prediction['predicted_label']
             
-            if pre_label == "vulnerable" and post_label == "non-vulnerable":
-                pairwise_category = "P-C"  # Perfect-Correct
+            if pre_label == "vulnerable" and post_label == "clean":
+                pairwise_category = "P-C"  # Pairwise-Correct
             elif pre_label == "vulnerable" and post_label == "vulnerable":
-                pairwise_category = "P-V"  # Perfect-Vulnerable (FP on post)
-            elif pre_label == "non-vulnerable" and post_label == "non-vulnerable":
-                pairwise_category = "P-B"  # Perfect-Benign (FN on pre)
-            elif pre_label == "non-vulnerable" and post_label == "vulnerable":
-                pairwise_category = "P-R"  # Perfect-Reverse (worst case)
+                pairwise_category = "P-V"  # Pairwise-Vulnerable (FP on post)
+            elif pre_label == "clean" and post_label == "clean":
+                pairwise_category = "P-B"  # Pairwise-Benign (FN on pre)
+            elif pre_label == "clean" and post_label == "vulnerable":
+                pairwise_category = "P-R"  # Pairwise-Reverse (worst case)
             else:
                 pairwise_category = "UNKNOWN"
             

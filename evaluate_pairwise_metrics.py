@@ -22,14 +22,14 @@ def calculate_pairwise_category(pre_label: str, post_label: str) -> str:
     Returns:
         Pairwise category: P-C, P-V, P-B, P-R, or UNKNOWN
     """
-    if pre_label == "vulnerable" and post_label == "non-vulnerable":
-        return "P-C"  # Perfect-Correct
+    if pre_label == "vulnerable" and post_label == "clean":
+        return "P-C"  # Pairwise-Correct
     elif pre_label == "vulnerable" and post_label == "vulnerable":
-        return "P-V"  # Perfect-Vulnerable (FP on post)
-    elif pre_label == "non-vulnerable" and post_label == "non-vulnerable":
-        return "P-B"  # Perfect-Benign (FN on pre)
-    elif pre_label == "non-vulnerable" and post_label == "vulnerable":
-        return "P-R"  # Perfect-Reverse (worst case)
+        return "P-V"  # Pairwise-Vulnerable (FP on post)
+    elif pre_label == "clean" and post_label == "clean":
+        return "P-B"  # Pairwise-Benign (FN on pre)
+    elif pre_label == "clean" and post_label == "vulnerable":
+        return "P-R"  # Pairwise-Reverse (worst case)
     else:
         return "UNKNOWN"
 
@@ -273,5 +273,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
 
 
