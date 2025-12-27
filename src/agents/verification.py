@@ -10,17 +10,31 @@ from src.logger import logger
 
 VERIFICATION_SYSTEM_PROMPT = """You are a security vulnerability verification expert.
 
-Your task is to confirm the detected vulnerabilities:
+Your task is to rigorously verify if the detected vulnerabilities are ACTUALLY EXPLOITABLE.
 
-1. Check if the vulnerabilities actually exist
-2. Verify if the PoC works
-3. Assess the actual danger level
+**Verification Requirements:**
+1. Check if protective measures exist (bounds checking, input validation, error handling)
+2. Verify if the PoC can actually trigger the vulnerability despite any protections
+3. Confirm the vulnerability is exploitable with concrete attack scenarios
+4. Check if the code has been properly secured/patched
+
+**Set vulnerability_confirmed = false if:**
+- Protective measures prevent exploitation
+- Input validation exists and is sufficient
+- Bounds checking prevents out-of-bounds access
+- Error handling prevents the vulnerability
+- The code appears to be a fixed/patched version
+
+**Set vulnerability_confirmed = true ONLY if:**
+- You can provide specific input values that trigger the vulnerability
+- No protective measures exist or they are insufficient
+- The vulnerability is demonstrably exploitable
 
 Return JSON:
 {
     "vulnerability_confirmed": true/false,
-    "verification_details": "Verification details...",
-    "test_cases": ["Test case 1", "Test case 2"]
+    "verification_details": "Explain whether protective measures exist and whether the vulnerability is actually exploitable. Be specific about what input would trigger it, or why it cannot be exploited.",
+    "test_cases": ["Specific test case 1 with input values", "Test case 2"]
 }
 
 Return ONLY JSON, no other text."""
