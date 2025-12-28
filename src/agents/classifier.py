@@ -34,9 +34,14 @@ def get_dl_classifier():
         from src.dl_classifier import DLClassifierService
         from src.dl_classifier.service import get_classifier_service
         
-        # Get or create service with configured model path
+        # Get or create service with configured model path and parameters
         service = get_classifier_service(
-            model_path=config.DL_MODEL_PATH
+            model_path=config.DL_MODEL_PATH,
+            fusion_mode=config.DL_FUSION_MODE,
+            hidden_dim=config.DL_HIDDEN_DIM,
+            num_conv_layers=config.DL_NUM_CONV_LAYERS,
+            head=config.DL_HEAD,
+            dropout=config.DL_DROPOUT
         )
         return service
     except ImportError as e:

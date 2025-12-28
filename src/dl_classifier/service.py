@@ -293,7 +293,12 @@ _service_instance: Optional[DLClassifierService] = None
 
 def get_classifier_service(
     model_path: Optional[str] = None,
-    force_reload: bool = False
+    force_reload: bool = False,
+    fusion_mode: Optional[str] = None,
+    hidden_dim: Optional[int] = None,
+    num_conv_layers: Optional[int] = None,
+    head: Optional[int] = None,
+    dropout: Optional[float] = None
 ) -> DLClassifierService:
     """
     Get or create the global classifier service instance.
@@ -301,6 +306,11 @@ def get_classifier_service(
     Args:
         model_path: Path to trained model (optional)
         force_reload: Force recreation of service instance
+        fusion_mode: Fusion mode (concat, gated, cross_atten)
+        hidden_dim: Hidden dimension
+        num_conv_layers: Number of conv layers
+        head: Number of attention heads
+        dropout: Dropout probability
         
     Returns:
         DLClassifierService instance
@@ -308,7 +318,19 @@ def get_classifier_service(
     global _service_instance
     
     if _service_instance is None or force_reload:
-        _service_instance = DLClassifierService(model_path=model_path)
+        kwargs = {'model_path': model_path}
+        if fusion_mode is not None:
+            kwargs['fusion_mode'] = fusion_mode
+        if hidden_dim is not None:
+            kwargs['hidden_dim'] = hidden_dim
+        if num_conv_layers is not None:
+            kwargs['num_conv_layers'] = num_conv_layers
+        if head is not None:
+            kwargs['head'] = head
+        if dropout is not None:
+            kwargs['dropout'] = dropout
+        
+        _service_instance = DLClassifierService(**kwargs)
     elif model_path and not _service_instance.is_model_loaded:
         _service_instance.load_model(model_path)
     
