@@ -1,0 +1,13 @@
+MAVUL PAIRWISE METRICS EVALUATION
+======================================================================
+
+Total Pairs Analyzed: 3
+
+P-C (Perfect-Correct):          1 ( 33.3%)  <- Higher is better
+P-V (Perfect-Vulnerable):       0 (  0.0%)  <- Lower is better
+P-B (Perfect-Benign):           2 ( 66.7%)  <- Lower is better
+P-R (Perfect-Reverse):          0 (  0.0%)  <- Lower is better
+
+Pairwise Accuracy (P-C): 33.33%
+======================================================================
+

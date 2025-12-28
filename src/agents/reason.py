@@ -42,6 +42,8 @@ def reason_agent(state: GraphState) -> dict:
     - Tạo PoC
     """
     source_code = state["source_code"]
+    code_version = state.get("code_version", "unknown")
+    analysis_context = state.get("analysis_context", "")
     detection = state.get("detection")
     
     llm = get_llm(temperature=config.REASON_TEMPERATURE)
@@ -57,6 +59,10 @@ def reason_agent(state: GraphState) -> dict:
     
     user_message = f"""Provide detailed analysis of the vulnerabilities in the following code:
 
+**Code Version:** {code_version}
+**Context:** {analysis_context}
+
+**SOURCE CODE:**
 ```c
 {source_code}
 ```

@@ -10,23 +10,26 @@ from src.logger import logger
 
 DETECTION_SYSTEM_PROMPT = """You are a software security expert specializing in analyzing vulnerabilities in C/C++ code.
 
-Your task is to analyze source code and identify EXPLOITABLE security vulnerabilities.
+Your task is to analyze source code and identify POTENTIAL security vulnerabilities that COULD be exploited.
 
 **CRITICAL INSTRUCTIONS:**
-- A vulnerability exists ONLY if it can actually be exploited
-- Distinguish between "dangerous function present" vs "dangerous function misused"
+- Report vulnerabilities if dangerous functions are used WITHOUT adequate protective measures
 - Check for protective measures: bounds checking, input validation, null checks, size limits
-- If protective measures exist and are sufficient, DO NOT report a vulnerability
+- If protective measures are MISSING or INSUFFICIENT, report the vulnerability
+- Be thorough - it's better to flag a potential issue than miss a real vulnerability
 
 **Examples of SAFE code (NOT vulnerable):**
 - strcpy() with validated buffer size: if (strlen(src) < BUFFER_SIZE) strcpy(dst, src);
-- malloc() with null check: ptr = malloc(size); if (!ptr) return;
+- malloc() with null check: ptr = malloc(size); if (!ptr) return NULL;
 - Array access with bounds check: if (index >= 0 && index < array_len) array[index] = value;
 
-**Examples of VULNERABLE code:**
+**Examples of VULNERABLE code (REPORT THESE):**
 - strcpy() without size validation: strcpy(buffer, user_input);
-- malloc() without null check and dereferencing: ptr = malloc(size); *ptr = value;
+- malloc() without null check before dereferencing: ptr = malloc(size); *ptr = value;
 - Array access without bounds check: array[user_index] = value;
+- Use-after-free: free(ptr); /* ... */ *ptr = value;
+- Memory leak: ptr = malloc(size); /* no free() */
+- Null pointer dereference: ptr->field without checking if ptr is NULL
 
 For each EXPLOITABLE vulnerability, you need to determine:
 1. Vulnerability type (vuln_type): buffer_overflow, format_string, use_after_free, integer_overflow, sql_injection, command_injection, xss, path_traversal, memory_leak, null_pointer, race_condition, other
@@ -62,14 +65,37 @@ def detection_agent(state: GraphState) -> dict:
     
     Phân tích chi tiết các lỗ hổng trong code.
     Có thể nhận feedback từ Critic để cải thiện.
+    
+    DL Classifier result is provided as metadata/hint, not as a gate.
+    The LLM agent performs its own independent analysis.
     """
     source_code = state["source_code"]
+    code_version = state.get("code_version", "unknown")
+    analysis_context = state.get("analysis_context", "")
+    classification = state.get("classification")  # Get DL classifier result as hint
     feedback_history = state.get("critic_feedback_history", [])
     
     llm = get_llm(temperature=config.DETECTION_TEMPERATURE)
     
-    # Build prompt with feedback if available
-    user_message = f"Analyze security vulnerabilities in the following code:\n\n```c\n{source_code}\n```"
+    # Build prompt with code version context and DL classifier hint
+    user_message = f"""Analyze security vulnerabilities in the following code:
+
+**Code Version:** {code_version}
+**Analysis Instructions:** {analysis_context}
+
+**SOURCE CODE:**
+```c
+{source_code}
+```"""
+    
+    # Add DL classifier hint as metadata (not as instruction)
+    if classification:
+        dl_hint = f"DL Model Hint: {classification.label} (confidence: {classification.confidence:.2%})"
+        if classification.detected_patterns:
+            patterns = ", ".join(classification.detected_patterns[:3])
+            dl_hint += f" | Patterns: {patterns}"
+        user_message += f"\n\n📊 {dl_hint}"
+        user_message += "\nNote: This is just a hint from a preliminary classifier. Perform your own thorough independent analysis."
     
     if feedback_history:
         feedback_text = "\n".join([f"- {fb}" for fb in feedback_history])

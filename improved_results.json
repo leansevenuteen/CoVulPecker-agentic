@@ -1,0 +1,77 @@
+[
+  {
+    "sample_id": 0,
+    "cwe_id": "Unknown",
+    "pre_patch_true_label": 1,
+    "post_patch_true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "clean",
+      "classifier_initial_label": "vulnerable",
+      "classifier_confidence": 0.9985970854759216,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": false,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "clean",
+      "classifier_initial_label": "vulnerable",
+      "classifier_confidence": 0.995884358882904,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": false,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-B",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 1,
+    "cwe_id": "Unknown",
+    "pre_patch_true_label": 1,
+    "post_patch_true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "clean",
+      "classifier_initial_label": "vulnerable",
+      "classifier_confidence": 0.9363747835159302,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": false,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "clean",
+      "classifier_initial_label": "vulnerable",
+      "classifier_confidence": 0.9619510173797607,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": false,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-B",
+    "iterations": 1,
+    "status": "success"
+  },
+  {
+    "sample_id": 2,
+    "cwe_id": "Unknown",
+    "pre_patch_true_label": 1,
+    "post_patch_true_label": 0,
+    "pre_patch_prediction": {
+      "predicted_label": "clean",
+      "classifier_initial_label": "vulnerable",
+      "classifier_confidence": 0.993675172328949,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": false,
+      "critic_decision": "approved"
+    },
+    "post_patch_prediction": {
+      "predicted_label": "clean",
+      "classifier_initial_label": "vulnerable",
+      "classifier_confidence": 0.9950127005577087,
+      "vulnerabilities_found": 0,
+      "vulnerability_confirmed": false,
+      "critic_decision": "approved"
+    },
+    "pairwise_category": "P-B",
+    "iterations": 1,
+    "status": "success"
+  }
+]

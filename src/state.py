@@ -16,6 +16,8 @@ class GraphState(TypedDict):
     
     # Input
     source_code: str
+    code_version: Optional[str]  # NEW: "pre-patch" or "post-patch"
+    analysis_context: Optional[str]  # NEW: Instructions for this version
     
     # Stage 1: Classification
     classification: Optional[ClassificationResult]

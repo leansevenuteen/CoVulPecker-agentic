@@ -11,25 +11,48 @@ from collections import defaultdict
 from typing import Dict, List, Any
 
 
-def calculate_pairwise_category(pre_label: str, post_label: str) -> str:
+def calculate_pairwise_category(pre_label: str, post_label: str, pre_true: int = 1, post_true: int = 0) -> str:
     """
-    Determine pairwise category based on pre and post predictions.
+    Determine pairwise category by comparing predictions to true labels.
     
     Args:
-        pre_label: Predicted label for pre-patch code
-        post_label: Predicted label for post-patch code
+        pre_label: Predicted label for pre-patch code ("vulnerable" or "clean")
+        post_label: Predicted label for post-patch code ("vulnerable" or "clean")
+        pre_true: True label for pre-patch (1=vulnerable, 0=clean, default=1)
+        post_true: True label for post-patch (1=vulnerable, 0=clean, default=0)
         
     Returns:
         Pairwise category: P-C, P-V, P-B, P-R, or UNKNOWN
+        
+    Categories based on MAVUL metrics:
+        P-C: TP (pre) + TN (post) - Both predictions correct
+        P-V: TP (pre) + FP (post) - Pre correct, post wrong
+        P-B: FN (pre) + TN (post) - Pre wrong, post correct
+        P-R: FN (pre) + FP (post) - Both predictions wrong
     """
-    if pre_label == "vulnerable" and post_label == "clean":
-        return "P-C"  # Pairwise-Correct
-    elif pre_label == "vulnerable" and post_label == "vulnerable":
-        return "P-V"  # Pairwise-Vulnerable (FP on post)
-    elif pre_label == "clean" and post_label == "clean":
-        return "P-B"  # Pairwise-Benign (FN on pre)
-    elif pre_label == "clean" and post_label == "vulnerable":
-        return "P-R"  # Pairwise-Reverse (worst case)
+    # Convert labels to boolean for easier comparison
+    pre_pred = (pre_label == "vulnerable")
+    post_pred = (post_label == "vulnerable")
+    pre_true_vuln = (pre_true == 1)
+    post_true_vuln = (post_true == 1)  # Should always be 0 for postpatch
+    
+    # Determine TP/TN/FP/FN for prepatch
+    pre_tp = pre_pred and pre_true_vuln      # True Positive: predicted vulnerable, is vulnerable
+    pre_fn = not pre_pred and pre_true_vuln  # False Negative: predicted clean, is vulnerable
+    
+    # Determine TP/TN/FP/FN for postpatch
+    post_tn = not post_pred and not post_true_vuln  # True Negative: predicted clean, is clean
+    post_fp = post_pred and not post_true_vuln      # False Positive: predicted vulnerable, is clean
+    
+    # Categorize based on both results
+    if pre_tp and post_tn:
+        return "P-C"  # Perfect-Correct: both correct
+    elif pre_tp and post_fp:
+        return "P-V"  # Perfect-Vulnerable: pre correct, post FP
+    elif pre_fn and post_tn:
+        return "P-B"  # Perfect-Benign: pre FN, post correct
+    elif pre_fn and post_fp:
+        return "P-R"  # Perfect-Reverse: both wrong
     else:
         return "UNKNOWN"
 
@@ -70,22 +93,35 @@ def evaluate_pairwise_metrics(
     # Calculate or extract pairwise categories
     categorized_results = []
     for result in successful:
-        # Check if pairwise_category already exists
-        if 'pairwise_category' in result:
-            category = result['pairwise_category']
+        # Extract predictions
+        pre_label = result.get('pre_patch_prediction', {}).get('predicted_label')
+        post_label = result.get('post_patch_prediction', {}).get('predicted_label')
+        
+        # Extract or infer true labels
+        # Priority: explicit pre/post labels > single label field > default (1, 0)
+        if 'pre_patch_true_label' in result and 'post_patch_true_label' in result:
+            pre_true = result['pre_patch_true_label']
+            post_true = result['post_patch_true_label']
+        elif 'true_label' in result:
+            # Old format: assume single label is for prepatch, postpatch is always 0
+            pre_true = result['true_label']
+            post_true = 0
         else:
-            # Calculate from predictions (for old format results)
-            pre_label = result.get('pre_patch_prediction', {}).get('predicted_label')
-            post_label = result.get('post_patch_prediction', {}).get('predicted_label')
-            
-            if pre_label and post_label:
-                category = calculate_pairwise_category(pre_label, post_label)
-            else:
-                category = "UNKNOWN"
+            # Default: prepatch is vulnerable (1), postpatch is clean (0)
+            pre_true = 1
+            post_true = 0
+        
+        # Calculate category using true labels
+        if pre_label and post_label:
+            category = calculate_pairwise_category(pre_label, post_label, pre_true, post_true)
+        else:
+            category = "UNKNOWN"
         
         categorized_results.append({
             **result,
-            'pairwise_category': category
+            'pairwise_category': category,
+            'pre_patch_true_label': pre_true,
+            'post_patch_true_label': post_true
         })
     
     # Count categories

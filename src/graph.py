@@ -15,16 +15,17 @@ from src.agents import (
 
 def should_continue_after_classifier(state: GraphState) -> str:
     """
-    Quyết định sau Classifier:
-    - Nếu label = "vulnerable" -> tiếp tục detection
-    - Nếu label = "safe" -> kết thúc
-    """
-    classification = state.get("classification")
+    Always continue to detection - DL classifier is metadata, not gate.
     
-    if classification and classification.label == "vulnerable":
-        return "detection"
-    else:
-        return "end"
+    Philosophy: The DL classifier provides an initial hint/assessment,
+    but we let the full multi-agent system (Detection → Reason → Critic → Verification)
+    make the final decision. This allows LLM agents to catch false negatives
+    from the DL model and improves overall accuracy through multi-agent consensus.
+    
+    This change reduces P-B (Perfect-Benign) scores by ensuring all agents
+    contribute to the decision, even when DL classifier predicts "clean".
+    """
+    return "detection"  # Always continue, never skip agents
 
 
 def should_retry_detection(state: GraphState) -> str:
@@ -74,15 +75,8 @@ def create_vulnerability_detection_graph() -> StateGraph:
     # Đặt entry point
     workflow.set_entry_point("classifier")
     
-    # Thêm conditional edge sau classifier
-    workflow.add_conditional_edges(
-        "classifier",
-        should_continue_after_classifier,
-        {
-            "detection": "detection",
-            "end": END
-        }
-    )
+    # Classifier always continues to Detection (DL is metadata, not gate)
+    workflow.add_edge("classifier", "detection")
     
     # Detection -> Reason (always)
     workflow.add_edge("detection", "reason")

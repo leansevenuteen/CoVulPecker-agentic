@@ -10,31 +10,34 @@ from src.logger import logger
 
 VERIFICATION_SYSTEM_PROMPT = """You are a security vulnerability verification expert.
 
-Your task is to rigorously verify if the detected vulnerabilities are ACTUALLY EXPLOITABLE.
+Your task is to verify if the detected vulnerabilities are LIKELY exploitable based on code analysis.
 
 **Verification Requirements:**
 1. Check if protective measures exist (bounds checking, input validation, error handling)
-2. Verify if the PoC can actually trigger the vulnerability despite any protections
-3. Confirm the vulnerability is exploitable with concrete attack scenarios
+2. Assess if the vulnerability can realistically be exploited
+3. Consider if the vulnerability would allow an attacker to cause harm
 4. Check if the code has been properly secured/patched
 
 **Set vulnerability_confirmed = false if:**
-- Protective measures prevent exploitation
-- Input validation exists and is sufficient
-- Bounds checking prevents out-of-bounds access
-- Error handling prevents the vulnerability
-- The code appears to be a fixed/patched version
+- Strong protective measures prevent exploitation
+- Comprehensive input validation exists
+- Proper bounds checking prevents out-of-bounds access
+- Error handling adequately prevents the vulnerability
+- The code appears to be a properly fixed/patched version
 
-**Set vulnerability_confirmed = true ONLY if:**
-- You can provide specific input values that trigger the vulnerability
-- No protective measures exist or they are insufficient
-- The vulnerability is demonstrably exploitable
+**Set vulnerability_confirmed = true if:**
+- No protective measures exist OR they are insufficient
+- The dangerous function/pattern is used without adequate checks
+- An attacker could plausibly trigger the vulnerability
+- The vulnerability pattern is clear and unmitigated
+
+**Note:** You don't need to provide exact exploit code - assess based on the code structure and common vulnerability patterns.
 
 Return JSON:
 {
     "vulnerability_confirmed": true/false,
-    "verification_details": "Explain whether protective measures exist and whether the vulnerability is actually exploitable. Be specific about what input would trigger it, or why it cannot be exploited.",
-    "test_cases": ["Specific test case 1 with input values", "Test case 2"]
+    "verification_details": "Explain whether protective measures exist and whether the vulnerability is likely exploitable. Reference specific lines or patterns.",
+    "test_cases": ["Description of potential attack scenario 1", "Attack scenario 2"]
 }
 
 Return ONLY JSON, no other text."""
@@ -48,16 +51,22 @@ def verification_agent(state: GraphState) -> dict:
     Đánh dấu vulnerability_confirmed = True/False.
     """
     source_code = state["source_code"]
+    code_version = state.get("code_version", "unknown")
+    analysis_context = state.get("analysis_context", "")
     detection = state.get("detection")
     reasoning = state.get("reasoning")
     
     llm = get_llm(temperature=config.VERIFICATION_TEMPERATURE)
     
-    # Build context
-    context = "**VULNERABILITY ANALYSIS:**\n\n"
+    # Build context with code version information
+    context = f"""**Code Version:** {code_version}
+**Analysis Context:** {analysis_context}
+
+**VULNERABILITY ANALYSIS:**
+"""
     
     if detection and detection.vulnerabilities:
-        context += "**Vulnerabilities:**\n"
+        context += "\n**Vulnerabilities:**\n"
         for vuln in detection.vulnerabilities:
             context += f"- {vuln.vuln_type.value} ({vuln.severity.value}): {vuln.description}\n"
             context += f"  Code: {vuln.vulnerable_code}\n"

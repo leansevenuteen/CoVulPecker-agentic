@@ -42,22 +42,48 @@ def run_detection_on_dataset(
     print(f"LLM API: {config.LLM_API_BASE_URL}")
     print("-" * 70)
     
+    print("Testing LLM connection...")
+    try:
+        from src.llm import get_llm
+        test_llm = get_llm(temperature=0.1)
+        test_response = test_llm.invoke([{"role": "user", "content": "Reply with OK"}])
+        print(f"✓ LLM connected: {test_response.content[:50]}")
+    except Exception as e:
+        print(f"✗ LLM connection failed: {e}")
+        print("Pipeline will use fallback values (no LLM calls)")
+
     results = []
     
     for idx, sample in enumerate(tqdm(dataset, desc="Processing samples")):
         sample_id = sample.get('id', idx)
         pre_patch_code = sample.get('pre_patch', sample.get('code', ''))
         post_patch_code = sample.get('post_patch', '')
-        true_label = sample.get('label', None)
         cwe_id = sample.get('cwe_id', 'Unknown')
         
+        # Extract true labels - handle both old and new dataset formats
+        if 'pre_patch_label' in sample and 'post_patch_label' in sample:
+            # New format: explicit labels for both
+            pre_true_label = sample['pre_patch_label']
+            post_true_label = sample['post_patch_label']
+        elif 'label' in sample:
+            # Old format: single label (assume prepatch=label, postpatch=0)
+            pre_true_label = sample['label']
+            post_true_label = 0
+        else:
+            # Default: prepatch is vulnerable, postpatch is clean
+            pre_true_label = 1
+            post_true_label = 0
+        
         print(f"\n[{idx+1}/{len(dataset)}] Sample {sample_id} (CWE: {cwe_id})")
+        print(f"  True labels: pre={pre_true_label}, post={post_true_label}")
         
         try:
             # Run detection pipeline on PRE-PATCH (vulnerable) code
             print(f"  Analyzing PRE-PATCH code...")
             pre_state = {
                 "source_code": pre_patch_code,
+                "code_version": "pre-patch",
+                "analysis_context": "You are analyzing the ORIGINAL vulnerable code before any security fixes were applied. Your goal is to identify security vulnerabilities that need to be patched.",
                 "classification": None,
                 "detection": None,
                 "reasoning": None,
@@ -72,20 +98,31 @@ def run_detection_on_dataset(
             
             pre_final_state = vulnerability_detector.invoke(pre_state)
             
+            # Determine final label from Verification agent (last stage), not Classifier (first stage)
+            verification_confirmed = pre_final_state.get("verification").vulnerability_confirmed if pre_final_state.get("verification") else False
+            final_label = "vulnerable" if verification_confirmed else "clean"
+            
+            # Get classifier's initial prediction for reference
+            classifier_label = pre_final_state.get("classification").label if pre_final_state.get("classification") else None
+            classifier_confidence = pre_final_state.get("classification").confidence if pre_final_state.get("classification") else None
+            
             pre_prediction = {
-                "predicted_label": pre_final_state.get("classification").label if pre_final_state.get("classification") else None,
-                "confidence": pre_final_state.get("classification").confidence if pre_final_state.get("classification") else None,
+                "predicted_label": final_label,  # Final decision from multi-agent system
+                "classifier_initial_label": classifier_label,  # DL classifier's initial prediction
+                "classifier_confidence": classifier_confidence,  # DL classifier's confidence
                 "vulnerabilities_found": len(pre_final_state.get("detection").vulnerabilities) if pre_final_state.get("detection") else 0,
-                "vulnerability_confirmed": pre_final_state.get("verification").vulnerability_confirmed if pre_final_state.get("verification") else False,
+                "vulnerability_confirmed": verification_confirmed,
                 "critic_decision": pre_final_state.get("critic").decision if pre_final_state.get("critic") else None,
             }
             
-            print(f"    PRE-PATCH: {pre_prediction['predicted_label']} ({pre_prediction['confidence']:.2%})")
+            print(f"    PRE-PATCH: {pre_prediction['predicted_label']} (DL initial: {classifier_label} {classifier_confidence:.2%}, verified: {verification_confirmed})")
             
             # Run detection pipeline on POST-PATCH (fixed) code
             print(f"  Analyzing POST-PATCH code...")
             post_state = {
                 "source_code": post_patch_code,
+                "code_version": "post-patch",
+                "analysis_context": "You are analyzing the PATCHED/FIXED version of the code. Your goal is to verify that security vulnerabilities have been properly addressed and fixed.",
                 "classification": None,
                 "detection": None,
                 "reasoning": None,
@@ -100,15 +137,24 @@ def run_detection_on_dataset(
             
             post_final_state = vulnerability_detector.invoke(post_state)
             
+            # Determine final label from Verification agent (last stage), not Classifier (first stage)
+            verification_confirmed = post_final_state.get("verification").vulnerability_confirmed if post_final_state.get("verification") else False
+            final_label = "vulnerable" if verification_confirmed else "clean"
+            
+            # Get classifier's initial prediction for reference
+            classifier_label = post_final_state.get("classification").label if post_final_state.get("classification") else None
+            classifier_confidence = post_final_state.get("classification").confidence if post_final_state.get("classification") else None
+            
             post_prediction = {
-                "predicted_label": post_final_state.get("classification").label if post_final_state.get("classification") else None,
-                "confidence": post_final_state.get("classification").confidence if post_final_state.get("classification") else None,
+                "predicted_label": final_label,  # Final decision from multi-agent system
+                "classifier_initial_label": classifier_label,  # DL classifier's initial prediction
+                "classifier_confidence": classifier_confidence,  # DL classifier's confidence
                 "vulnerabilities_found": len(post_final_state.get("detection").vulnerabilities) if post_final_state.get("detection") else 0,
-                "vulnerability_confirmed": post_final_state.get("verification").vulnerability_confirmed if post_final_state.get("verification") else False,
+                "vulnerability_confirmed": verification_confirmed,
                 "critic_decision": post_final_state.get("critic").decision if post_final_state.get("critic") else None,
             }
             
-            print(f"    POST-PATCH: {post_prediction['predicted_label']} ({post_prediction['confidence']:.2%})")
+            print(f"    POST-PATCH: {post_prediction['predicted_label']} (DL initial: {classifier_label} {classifier_confidence:.2%}, verified: {verification_confirmed})")
             
             # Determine pairwise category
             pre_label = pre_prediction['predicted_label']
@@ -131,7 +177,8 @@ def run_detection_on_dataset(
             result = {
                 "sample_id": sample_id,
                 "cwe_id": cwe_id,
-                "true_label": true_label,
+                "pre_patch_true_label": pre_true_label,
+                "post_patch_true_label": post_true_label,
                 "pre_patch_prediction": pre_prediction,
                 "post_patch_prediction": post_prediction,
                 "pairwise_category": pairwise_category,
@@ -144,7 +191,8 @@ def run_detection_on_dataset(
             result = {
                 "sample_id": sample_id,
                 "cwe_id": cwe_id,
-                "true_label": true_label,
+                "pre_patch_true_label": pre_true_label,
+                "post_patch_true_label": post_true_label,
                 "status": "error",
                 "error": str(e)
             }
